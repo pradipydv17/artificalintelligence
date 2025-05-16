@@ -180,3 +180,17 @@ def create_maze_breaks_depthfirst():
     maze.save_to_txt("maze-breaks-depth.txt")
 
     # <==== insert your code above here
+
+def create_maze_depth_better():
+    # ====> insert your code below here
+    #remember to comment out any mention of show_maze() before you submit your work
+    maze = Maze(mazefile="maze.txt")
+    maze.contents[1][8] = wall_colour
+    maze.contents[9][10] = wall_colour
+    maze.contents[15][6] = wall_colour
+    maze.contents[13][2] = wall_colour
+    maze.contents[12][13] = wall_colour
+    maze.contents[2][13] = wall_colour
+    maze.save_to_txt("maze-depth-better.txt")
+
+    # <==== insert your code above here
